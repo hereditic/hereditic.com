@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hereditic - The Frontier of Biotechnology</title>
+    <meta name="description" content="Hereditic is a space dedicated to exploring the frontier of biotechnology, from the revolutionary potential of CRISPR to the complex ethics of engineering life itself.">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.cdnfonts.com/css/brockmann" rel="stylesheet">
+                
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Schema.org Markup for SEO and AI Crawlers -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Hereditic",
+          "url": "https://hereditic.com",
+          "description": "Exploring the Frontier of Biotechnology and Genetic Engineering."
+        },
+        {
+          "@type": "Person",
+          "name": "[Your Name]",
+          "url": "https://hereditic.com",
+          "jobTitle": "Molecular Biology Student & Founder",
+          "description": "Founder of Hereditic, a space dedicated to exploring the frontier of biotechnology and genetic engineering.",
+          "sameAs": [
+            "https://www.linkedin.com/in/olipetrovic/"
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="antialiased">
+    <!-- Tailwind Config to use CSS variables -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'var(--md-sys-color-primary)', onPrimary: 'var(--md-sys-color-on-primary)', primaryContainer: 'var(--md-sys-color-primary-container)', onPrimaryContainer: 'var(--md-sys-color-on-primary-container)',
+                        secondary: 'var(--md-sys-color-secondary)', onSecondary: 'var(--md-sys-color-on-secondary)', secondaryContainer: 'var(--md-sys-color-secondary-container)', onSecondaryContainer: 'var(--md-sys-color-on-secondary-container)',
+                        tertiary: 'var(--md-sys-color-tertiary)', onTertiary: 'var(--md-sys-color-on-tertiary)', tertiaryContainer: 'var(--md-sys-color-tertiary-container)', onTertiaryContainer: 'var(--md-sys-color-on-tertiary-container)',
+                        background: 'var(--md-sys-color-background)', onBackground: 'var(--md-sys-color-on-background)',
+                        surface: 'var(--md-sys-color-surface)', onSurface: 'var(--md-sys-color-on-surface)',
+                        surfaceVariant: 'var(--md-sys-color-surface-variant)', onSurfaceVariant: 'var(--md-sys-color-on-surface-variant)',
+                        outline: 'var(--md-sys-color-outline)', outlineVariant: 'var(--md-sys-color-outline-variant)',
+                        surfaceContainerLowest: 'var(--md-sys-color-surface-container-lowest)', surfaceContainerLow: 'var(--md-sys-color-surface-container-low)', surfaceContainer: 'var(--md-sys-color-surface-container)', surfaceContainerHigh: 'var(--md-sys-color-surface-container-high)', surfaceContainerHighest: 'var(--md-sys-color-surface-container-highest)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- HEADER (Hero Section) -->
+    <header class="bg-surface min-h-screen w-full flex items-center justify-center p-6 lg:p-12 overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
+            <div class="text-center lg:text-left z-10">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-onSurface fade-in">hereditic</h1>
+                <p class="text-xl md:text-2xl mt-4 text-onSurfaceVariant font-medium fade-in fade-in-delay-1 display-font">Exploring the Frontier of Biotechnology and Genetic Engineering.</p>
+                <p class="text-base md:text-lg mt-6 max-w-xl mx-auto lg:mx-0 text-onSurfaceVariant leading-relaxed fade-in fade-in-delay-2">
+                    Our DNA holds the blueprint of life. Hereditic is a space dedicated to exploring this frontier, from the potential of CRISPR to the complex ethics of engineering life itself.
+                </p>
+            </div>
+            <div class="relative w-full h-64 lg:h-full flex items-center justify-center z-0 px-4">
+                <!-- Graphic -->
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="bg-surfaceContainerLow px-6 py-16 sm:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto space-y-24">
+
+            <!-- AREAS OF EXPLORATION SECTION -->
+            <section>
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-onSurface">Areas of Exploration</h2>
+                    <p class="text-lg md:text-xl mt-4 font-medium text-onSurfaceVariant max-w-3xl mx-auto">A collection of interests and passions driving this project forward.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl">
+                        <span class="material-icons-outlined text-4xl text-primary">biotech</span>
+                        <h3 class="text-xl font-semibold text-onSurface mt-4">Gene Editing Technologies</h3>
+                        <p class="text-base mt-2 text-onSurfaceVariant">CRISPR-Cas9, Base & Prime Editing, and the future of therapeutic gene modification.</p>
+                    </div>
+                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl">
+                        <span class="material-icons-outlined text-4xl text-primary">query_stats</span>
+                        <h3 class="text-xl font-semibold text-onSurface mt-4">Bioinformatics</h3>
+                        <p class="text-base mt-2 text-onSurfaceVariant">Leveraging computational biology to decode complex genetic data and biological systems.</p>
+                    </div>
+                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl">
+                        <span class="material-icons-outlined text-4xl text-primary">science</span>
+                        <h3 class="text-xl font-semibold text-onSurface mt-4">Synthetic Biology</h3>
+                        <p class="text-base mt-2 text-onSurfaceVariant">Engineering novel biological parts, devices, and systems for useful purposes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT & FIELD NOTES SECTION -->
+            <section class="bg-surfaceContainer p-8 sm:p-12 rounded-3xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+                    <div class="md:col-span-1">
+                        <h2 class="text-2xl md:text-3xl font-bold text-onSurface">About the Founder</h2>
+                        <p class="text-base lg:text-lg mt-4 text-onSurfaceVariant">
+                            My name is <strong class="font-semibold text-onSurface">Oliver Petrovič</strong>, a molecular biology student passionate about engineering biological systems.
+                        </p>
+                        <a href="https://www.linkedin.com/in/olipetrovic/" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 text-primary font-semibold hover:underline">
+                            Let's Connect &rarr;
+                        </a>
+                    </div>
+                    <div class="md:col-span-2 bg-surfaceContainerHighest p-8 rounded-2xl">
+                         <h3 class="text-xl font-semibold text-onSurface">Field Notes</h3>
+                         <p class="text-sm mt-1 text-onSurfaceVariant">Occasional thoughts from the frontier.</p>
+                         <div class="mt-6 border-t pt-6 border-outlineVariant">
+                             <p class="text-xs font-medium uppercase tracking-wider text-onSurfaceVariant">July 15, 2025</p>
+                             <p class="text-base mt-2 text-onSurfaceVariant">
+                                Just read a fascinating paper in <em>Nature</em> on a new prime editing delivery system. The efficiency gains are incredible. It makes me wonder about the clinical translation timeline...
+                             </p>
+                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EMAIL CAPTURE SECTION -->
+            <section class="text-center">
+                 <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-onSurface">Join the Journey</h2>
+                 <p class="text-lg md:text-xl mt-4 font-medium text-onSurfaceVariant max-w-3xl mx-auto display-font">Be the first to know about future projects and insights.</p>
+                 <form action="#" method="POST" class="mt-8 flex flex-col sm:flex-row items-center gap-4 max-w-md mx-auto">
+                    <input type="email" name="email" required placeholder="your.email@example.com" class="w-full h-12 px-4 rounded-lg bg-surfaceContainerHighest text-onSurface placeholder:text-onSurfaceVariant focus:outline-none focus:ring-2 focus:ring-primary transition-shadow">
+                    <button type="submit" class="w-full sm:w-auto h-12 px-8 rounded-lg bg-primary text-onPrimary font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background focus:ring-primary">
+                        Subscribe
+                    </button>
+                 </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-surfaceContainer">
+        <div class="max-w-7xl mx-auto py-6 px-6 text-center">
+            <p class="text-sm text-onSurfaceVariant">&copy; <span id="year"></span> Hereditic.com. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
