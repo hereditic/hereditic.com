@@ -6,20 +6,16 @@
     <title>Hereditic - The Frontier of Biotechnology</title>
     <meta name="description" content="Hereditic is a space dedicated to exploring the frontier of biotechnology, from the revolutionary potential of CRISPR to the complex ethics of engineering life itself.">
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <link href="https://fonts.cdnfonts.com/css/brockmann" rel="stylesheet">
                 
-    <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <!-- Schema.org Markup for SEO and AI Crawlers -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -47,7 +43,6 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body class="antialiased">
-    <!-- Tailwind Config to use CSS variables -->
     <script>
         tailwind.config = {
             theme: {
@@ -67,8 +62,9 @@
         }
     </script>
 
-    <!-- HEADER (Hero Section) -->
-    <header class="bg-surface min-h-screen w-full flex items-center justify-center p-6 lg:p-12 overflow-hidden">
+    <header class="relative bg-surface min-h-screen w-full flex items-center justify-center p-6 lg:p-12 overflow-hidden">
+        <div id="three-background" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
             <div class="text-center lg:text-left z-10">
                 <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-onSurface fade-in">hereditic</h1>
@@ -77,87 +73,197 @@
                     Our DNA holds the blueprint of life. Hereditic is a space dedicated to exploring this frontier, from the potential of CRISPR to the complex ethics of engineering life itself.
                 </p>
             </div>
-            <div class="relative w-full h-64 lg:h-full flex items-center justify-center z-0 px-4">
-                <!-- Graphic -->
+            <div class="relative w-full h-64 lg:h-full z-10">
             </div>
         </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main class="bg-surfaceContainerLow px-6 py-16 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto space-y-24">
-
-            <!-- AREAS OF EXPLORATION SECTION -->
             <section>
                 <div class="text-center mb-16">
                     <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-onSurface">Areas of Exploration</h2>
                     <p class="text-lg md:text-xl mt-4 font-medium text-onSurfaceVariant max-w-3xl mx-auto">A collection of interests and passions driving this project forward.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl">
-                        <span class="material-icons-outlined text-4xl text-primary">biotech</span>
-                        <h3 class="text-xl font-semibold text-onSurface mt-4">Gene Editing Technologies</h3>
-                        <p class="text-base mt-2 text-onSurfaceVariant">CRISPR-Cas9, Base & Prime Editing, and the future of therapeutic gene modification.</p>
-                    </div>
-                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl">
-                        <span class="material-icons-outlined text-4xl text-primary">query_stats</span>
-                        <h3 class="text-xl font-semibold text-onSurface mt-4">Bioinformatics</h3>
-                        <p class="text-base mt-2 text-onSurfaceVariant">Leveraging computational biology to decode complex genetic data and biological systems.</p>
-                    </div>
-                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl">
-                        <span class="material-icons-outlined text-4xl text-primary">science</span>
-                        <h3 class="text-xl font-semibold text-onSurface mt-4">Synthetic Biology</h3>
-                        <p class="text-base mt-2 text-onSurfaceVariant">Engineering novel biological parts, devices, and systems for useful purposes.</p>
-                    </div>
+                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl"><span class="material-icons-outlined text-4xl text-primary">biotech</span><h3 class="text-xl font-semibold text-onSurface mt-4">Gene Editing Technologies</h3><p class="text-base mt-2 text-onSurfaceVariant">CRISPR-Cas9, Base & Prime Editing, and the future of therapeutic gene modification.</p></div>
+                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl"><span class="material-icons-outlined text-4xl text-primary">query_stats</span><h3 class="text-xl font-semibold text-onSurface mt-4">Bioinformatics</h3><p class="text-base mt-2 text-onSurfaceVariant">Leveraging computational biology to decode complex genetic data and biological systems.</p></div>
+                    <div class="bg-surfaceContainerHigh p-8 rounded-3xl"><span class="material-icons-outlined text-4xl text-primary">science</span><h3 class="text-xl font-semibold text-onSurface mt-4">Synthetic Biology</h3><p class="text-base mt-2 text-onSurfaceVariant">Engineering novel biological parts, devices, and systems for useful purposes.</p></div>
                 </div>
             </section>
-
-            <!-- ABOUT & FIELD NOTES SECTION -->
             <section class="bg-surfaceContainer p-8 sm:p-12 rounded-3xl">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-                    <div class="md:col-span-1">
-                        <h2 class="text-2xl md:text-3xl font-bold text-onSurface">About the Founder</h2>
-                        <p class="text-base lg:text-lg mt-4 text-onSurfaceVariant">
-                            My name is <strong class="font-semibold text-onSurface">Oliver Petrovič</strong>, a molecular biology student passionate about engineering biological systems.
-                        </p>
-                        <a href="https://www.linkedin.com/in/olipetrovic/" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 text-primary font-semibold hover:underline">
-                            Let's Connect &rarr;
-                        </a>
-                    </div>
-                    <div class="md:col-span-2 bg-surfaceContainerHighest p-8 rounded-2xl">
-                         <h3 class="text-xl font-semibold text-onSurface">Field Notes</h3>
-                         <p class="text-sm mt-1 text-onSurfaceVariant">Occasional thoughts from the frontier.</p>
-                         <div class="mt-6 border-t pt-6 border-outlineVariant">
-                             <p class="text-xs font-medium uppercase tracking-wider text-onSurfaceVariant">July 15, 2025</p>
-                             <p class="text-base mt-2 text-onSurfaceVariant">
-                                Just read a fascinating paper in <em>Nature</em> on a new prime editing delivery system. The efficiency gains are incredible. It makes me wonder about the clinical translation timeline...
-                             </p>
-                         </div>
-                    </div>
+                    <div class="md:col-span-1"><h2 class="text-2xl md:text-3xl font-bold text-onSurface">About the Founder</h2><p class="text-base lg:text-lg mt-4 text-onSurfaceVariant">My name is <strong class="font-semibold text-onSurface">Oliver Petrovič</strong>, a molecular biology student passionate about engineering biological systems.</p><a href="https://www.linkedin.com/in/olipetrovic/" target="_blank" rel="noopener noreferrer" class="inline-block mt-6 text-primary font-semibold hover:underline">Let's Connect &rarr;</a></div>
+                    <div class="md:col-span-2 bg-surfaceContainerHighest p-8 rounded-2xl"><h3 class="text-xl font-semibold text-onSurface">Field Notes</h3><p class="text-sm mt-1 text-onSurfaceVariant">Occasional thoughts from the frontier.</p><div class="mt-6 border-t pt-6 border-outlineVariant"><p class="text-xs font-medium uppercase tracking-wider text-onSurfaceVariant">July 15, 2025</p><p class="text-base mt-2 text-onSurfaceVariant">Just read a fascinating paper in <em>Nature</em> on a new prime editing delivery system. The efficiency gains are incredible. It makes me wonder about the clinical translation timeline...</p></div></div>
                 </div>
             </section>
-
-            <!-- EMAIL CAPTURE SECTION -->
             <section class="text-center">
                  <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-onSurface">Join the Journey</h2>
                  <p class="text-lg md:text-xl mt-4 font-medium text-onSurfaceVariant max-w-3xl mx-auto display-font">Be the first to know about future projects and insights.</p>
-                 <form action="#" method="POST" class="mt-8 flex flex-col sm:flex-row items-center gap-4 max-w-md mx-auto">
-                    <input type="email" name="email" required placeholder="your.email@example.com" class="w-full h-12 px-4 rounded-lg bg-surfaceContainerHighest text-onSurface placeholder:text-onSurfaceVariant focus:outline-none focus:ring-2 focus:ring-primary transition-shadow">
-                    <button type="submit" class="w-full sm:w-auto h-12 px-8 rounded-lg bg-primary text-onPrimary font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background focus:ring-primary">
-                        Subscribe
-                    </button>
-                 </form>
+                 <form action="#" method="POST" class="mt-8 flex flex-col sm:flex-row items-center gap-4 max-w-md mx-auto"><input type="email" name="email" required placeholder="your.email@example.com" class="w-full h-12 px-4 rounded-lg bg-surfaceContainerHighest text-onSurface placeholder:text-onSurfaceVariant focus:outline-none focus:ring-2 focus:ring-primary transition-shadow"><button type="submit" class="w-full sm:w-auto h-12 px-8 rounded-lg bg-primary text-onPrimary font-semibold hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-background focus:ring-primary">Subscribe</button></form>
             </section>
         </div>
     </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-surfaceContainer">
-        <div class="max-w-7xl mx-auto py-6 px-6 text-center">
-            <p class="text-sm text-onSurfaceVariant">&copy; <span id="year"></span> Hereditic.com. All rights reserved.</p>
-        </div>
-    </footer>
+    <footer class="bg-surfaceContainer"><div class="max-w-7xl mx-auto py-6 px-6 text-center"><p class="text-sm text-onSurfaceVariant">&copy; <span id="year"></span> Hereditic.com. All rights reserved.</p></div></footer>
 
     <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.166.1/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.166.1/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module">
+        import * as THREE from 'three';
+        import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
+
+        let camera, scene, renderer;
+        let parentGroup;
+        const clock = new THREE.Clock();
+
+        const colorPalettes = {
+            light: {
+                background: 0xf0f0f0,
+                fog: 0xf0f0f0,
+                points: 0x222222,
+            },
+            dark: {
+                background: 0x000104,
+                fog: 0x000001,
+                points: 0xffffff,
+            }
+        };
+
+        init();
+
+        function init() {
+            // UPDATED: Target the new div inside the header
+            const container = document.querySelector('#three-background');
+
+            camera = new THREE.PerspectiveCamera(9, window.innerWidth / window.innerHeight, 1, 50000);
+            camera.position.set(0, 700, 7000);
+
+            scene = new THREE.Scene();
+            camera.lookAt(scene.position);
+
+            scene.fog = new THREE.FogExp2(0x000000, 0.0000675);
+
+            const loader = new OBJLoader();
+            Promise.all([
+                loader.loadAsync('https://raw.githubusercontent.com/mrdoob/three.js/master/examples/models/obj/male02/male02.obj'),
+                loader.loadAsync('https://raw.githubusercontent.com/mrdoob/three.js/master/examples/models/obj/female02/female02.obj')
+            ]).then(([maleModel, femaleModel]) => {
+                const malePositions = combineBufferGeometry(maleModel);
+                const femalePositions = combineBufferGeometry(femaleModel);
+
+                const numModels = 10;
+                const circleRadius = 1200;
+
+                for (let i = 0; i < numModels; i++) {
+                    const angle = (i / numModels) * Math.PI * 2;
+                    const x = circleRadius * Math.cos(angle);
+                    const z = circleRadius * Math.sin(angle);
+                    
+                    const positions = i % 2 === 0 ? malePositions : femalePositions;
+                    const rotationY = -angle + Math.PI / 2;
+
+                    createPoints(positions, x, -350, z, rotationY);
+                }
+                
+                setupColorScheme();
+            });
+
+            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); // alpha: true makes background transparent
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setAnimationLoop(animate);
+            container.appendChild(renderer.domElement);
+
+            parentGroup = new THREE.Object3D();
+            scene.add(parentGroup);
+            
+            window.addEventListener('resize', onWindowResize);
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function combineBufferGeometry(model) {
+            let totalVertices = 0;
+            model.traverse(child => { if (child.isMesh) { totalVertices += child.geometry.attributes.position.count; } });
+            const combined = new Float32Array(totalVertices * 3);
+            let offset = 0;
+            model.traverse(child => { if (child.isMesh) { combined.set(child.geometry.attributes.position.array, offset); offset += child.geometry.attributes.position.array.length; } });
+            return new THREE.BufferAttribute(combined, 3);
+        }
+
+        function createPoints(positions, x, y, z, rotationY) {
+            const geometry = new THREE.BufferGeometry();
+            const initialPositions = positions.clone();
+            geometry.setAttribute('position', initialPositions);
+
+            const displacementStrength = 50.0;
+            const probabilityExponent = 15.0;
+            const livePositions = geometry.attributes.position;
+            
+            for (let i = 0; i < livePositions.count; i++) {
+                const displacementChance = Math.random();
+                const displacementMagnitude = Math.pow(displacementChance, probabilityExponent);
+                if (displacementMagnitude > 0.01) {
+                    const ix = livePositions.getX(i);
+                    const iy = livePositions.getY(i);
+                    const iz = livePositions.getZ(i);
+                    const randX = (Math.random() - 0.5) * 2;
+                    const randY = (Math.random() - 0.5) * 2;
+                    const randZ = (Math.random() - 0.5) * 2;
+                    const dx = randX * displacementStrength * displacementMagnitude;
+                    const dy = randY * displacementStrength * displacementMagnitude;
+                    const dz = randZ * displacementStrength * displacementMagnitude;
+                    livePositions.setXYZ(i, ix + dx, iy + dy, iz + dz);
+                }
+            }
+
+            const material = new THREE.PointsMaterial({ size: 25 });
+            const points = new THREE.Points(geometry, material);
+            points.scale.set(4.05, 4.05, 4.05);
+            points.position.set(x, y, z);
+            points.rotation.y = rotationY;
+            parentGroup.add(points);
+        }
+
+        function setupColorScheme() {
+            const darkModeMatcher = window.matchMedia('(prefers-color-scheme: dark)');
+
+            function applyColors(isDarkMode) {
+                const palette = isDarkMode ? colorPalettes.dark : colorPalettes.light;
+
+                // The background is now controlled by CSS, so we only set fog and point colors
+                scene.fog.color.set(palette.fog);
+                
+                parentGroup.children.forEach(child => {
+                    if (child.isPoints) {
+                        child.material.color.set(palette.points);
+                    }
+                });
+            }
+
+            applyColors(darkModeMatcher.matches);
+            darkModeMatcher.addEventListener('change', (e) => applyColors(e.matches));
+        }
+
+        function animate() {
+            const delta = clock.getDelta();
+            if (parentGroup) {
+                parentGroup.rotation.y -= 0.05 * delta;
+            }
+            renderer.render(scene, camera);
+        }
+    </script>
 </body>
 </html>
